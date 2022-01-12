@@ -1,25 +1,23 @@
+# работа со строками и словарями!
+
 my_favorite_movies = 'Терминатор, Пятый элемент, Аватар, Чужие, Назад в будущее'
 my_favorite_movies+=','
-# Выведите на консоль с помощью индексации строки, последовательно:
-#   первый фильм
-#   последний
-#   второй
-#   второй с конца
 
-# Переопределять my_favorite_movies и использовать .split() нельзя.
-# Запятая не должна выводиться.
+i=i1=0#индексы для разбора строки
+st=''#пустая строка
+dict1={}#пустой словарь
+nom_slovara=0 #индекс ключей словаря
 
-# TODO здесь ваш код
-i=i1=0
-st=''
-print()
 for i in range(len(my_favorite_movies)):
     if my_favorite_movies[i] == ',' :
         st=st+my_favorite_movies[i1:i]
-        i1 = i+1
-    i = i + 1
-print(st)
+        nom_slovara+=1
+        dict1['key'+str(nom_slovara)]=my_favorite_movies[i1:i]
+        i1 =i+1
 
+    i += 1
+print(st)
+print(dict1['key1'],dict1['key'+str(nom_slovara)],dict1['key2'],dict1['key'+str(nom_slovara-1)])
 
 
 
