@@ -18,9 +18,3 @@ if h1<radius :
     print('True')
 else:
     print('False')
-
-# Пример вывода на консоль:
-#
-# 77777.7777
-# False
-# False
