@@ -10,7 +10,5 @@
 # print("\nDictionary after adding 3 elements: ") 
 # print(Dict) 
 
-t='dfjknzirodkkfjkall;lsd,,'
-print(t.find(';'))
-b=t.isalpha()
-print(type(b))
+u=[1.2,4,5,6,7,8]
+print(type(u))
