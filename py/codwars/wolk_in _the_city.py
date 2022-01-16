@@ -1,6 +1,6 @@
 wlk=['w','e','w','e','w','e','w','e','w','e','w','e']
 
-def is_valid_walk(walk):
+def is_valid_walk(walk):    
     if len(walk)!=10:
         print('should return False')
     else:
