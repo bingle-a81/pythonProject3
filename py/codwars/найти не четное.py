@@ -1,20 +1,18 @@
-a=[160, 3, 1719, 19, 11, 13, -21]
+a=[11,160, 3, 1719, 19, 11, 13]
+
 def find_outlier(integers):
-    k=0
-    if int(integers[0]) % 2 == 0:
-        p = 0
-    else:
-        p=1
-    for i in range(1,len(integers)):
-        if int(integers[i])%2==0:
-            if p==0:
-                p=0
-            else:
-                return (integers[i])
+    k0=[]
+    k1=[]
+    for i in range(len(integers)):
+        if int(integers[i]) % 2 == 0:
+            k0.append(integers[i])
         else:
-            if p==1:
-                p=1
-            else:
-                return (integers[i])
+            k1.append(integers[i])
+
+    if len(k0)==1:
+        return k0[0]
+    if len(k1)==1:
+        return k1[0]
+
 
 print(find_outlier(a))
