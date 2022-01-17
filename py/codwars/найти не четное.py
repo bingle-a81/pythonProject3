@@ -14,5 +14,10 @@ def find_outlier(integers):
     if len(k1)==1:
         return k1[0]
 
+def find_outlier1(int):
+    odds = [x for x in int if x%2!=0]
+    evens= [x for x in int if x%2==0]
+    return odds[0] if len(odds)<len(evens) else evens[0]
 
 print(find_outlier(a))
+print(find_outlier1(a))
