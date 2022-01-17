@@ -1,4 +1,4 @@
-a=[11,2, 4, 0, 100, 4, 11, 2602, 36]
+a=[160, 3, 1719, 19, 11, 13, -21]
 def find_outlier(integers):
     k=0
     if int(integers[0]) % 2 == 0:
@@ -10,14 +10,11 @@ def find_outlier(integers):
             if p==0:
                 p=0
             else:
-                k=integers[i]
+                return (integers[i])
         else:
             if p==1:
                 p=1
             else:
-                k = integers[i]
-
-
-    return k
+                return (integers[i])
 
 print(find_outlier(a))
