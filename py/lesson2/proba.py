@@ -1,14 +1,23 @@
-# Dict = {} 
-# print("Empty Dictionary: ") 
-# print(Dict) 
-  
-  
-# # Adding elements to dictionary one at a time 
-# Dict[0] = 'Peter'
-# Dict[2] = 'Joseph'
-# Dict[3] = 'Ricky'
-# print("\nDictionary after adding 3 elements: ") 
-# print(Dict) 
+# -*- coding: utf-8 -*-
 
-u=[1.2,4,5,6,7,8]
-print(type(u))
+# Поток выполнения программ
+
+print('дратути!')
+x = 34
+y = 43
+print(x * y)
+print('дотвидания!')
+
+# Посложнее программа
+
+print('дратути!')
+my_family_height = [
+    ['мама', 168],
+    ['папа', 186],
+    ['я', 200],
+]
+total_height = my_family_height[0][1]
+total_height += my_family_height[1][1]
+total_height += my_family_height[2][1]
+print('Общий рост моей семьи', total_height)
+print('дотвидания!')
