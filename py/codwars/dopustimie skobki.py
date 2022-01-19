@@ -10,42 +10,19 @@
 # "(}"       =>  False
 # "[(])"     =>  False
 # "[({})](]" =>  False
-a="[({})](]"
+a = "(({{[[]]}}))"
 
 
 def validBraces(string):
-    k1 = string.find("{")
-    k2 = string.find('}')
-    if k1 < 0 or k2 < k1 or k2 - k1 == 1:
-        return False
+    while ('{}' in string) or ("[]" in string) or ("()" in string):
+        string = string.replace('{}', '')
+        string = string.replace('()', '')
+        string = string.replace('[]', '')
     else:
-        return True
-
-
-print(validBraces(a))
-
-
-def validBraces(string):
-    lst=list(string)
-    ww=0
-
-    list1=[]
-
-    for r in range(len(lst)):
-
-        if lst[r]=='{':
-            list1.append(1)
-        elif lst[r]=='}':
-            list1.append(-1)
-
-    if len((list1))==0:
-        return False
-    else:
-        for k in range(len(list1)):
-            ww+=list1[k]
-            if ww<0:
-                return False
-        if ww==0:
+        if string == '':
             return True
         else:
             return False
+
+
+print(validBraces(a))
