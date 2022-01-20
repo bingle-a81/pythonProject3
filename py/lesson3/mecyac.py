@@ -16,4 +16,8 @@ dni=[31,28,31,30,31,30,31,31,30,31,30,31]
 mrn=dict(enumerate(zip(mes,dni)))
 mon,days=mrn.get(month)[0],mrn.get(month)[1]
 print('Вы ввели', mon)
-print('month='+mon,'days='+str(days))
+if days%2==0:
+    slov='дней'
+else:
+    slov='день'
+print('month='+mon,'days='+str(days),slov)
