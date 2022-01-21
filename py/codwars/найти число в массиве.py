@@ -28,3 +28,9 @@ def find_it(seq):
 
 print(find_it(lst))
 
+#альтернативное решение
+#def find_it(seq):
+#   for i in seq:
+#         if seq.count(i)%2!=0:
+#             return i
+
