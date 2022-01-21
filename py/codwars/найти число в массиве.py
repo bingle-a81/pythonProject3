@@ -22,7 +22,7 @@ print(lst)
 
 def find_it(seq):
     seq.sort()
-    for k, g in groupby(seq.sort()):
+    for k, g in groupby(seq):
         if len(list(g)) % 2 != 0:
             return k
 
