@@ -6,3 +6,5 @@ def faktorial(chislo):
 
 print(faktorial(9))
 
+
+
