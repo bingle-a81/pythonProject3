@@ -4,7 +4,7 @@ def faktorial(chislo):
     faktorial_minus_1=faktorial(chislo-1)
     return chislo*faktorial_minus_1
 
-print(faktorial(9))
+print(faktorial(5))
 
 
 
