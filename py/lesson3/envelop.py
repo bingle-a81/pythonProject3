@@ -19,8 +19,35 @@ paper_x, paper_y = 8, 9
 # paper_x, paper_y = 11, 9
 # paper_x, paper_y = 9, 11
 # (просто раскоментировать нужную строку и проверить свой код)
+if envelop_x>envelop_y:
+    if paper_x>paper_y:
+        if envelop_x>paper_x and envelop_y>paper_y:
+            print(True)
+        else:
+            print(False)
+    else:
+        if envelop_x>paper_y and envelop_y>paper_x:
+            print(True)
+        else:
+            print(False)
+else:
+    if paper_x>paper_y:
+        if envelop_y>paper_x and envelop_x>paper_y:
+            print(True)
+        else:
+            print(False)
+    else:
+        if envelop_y>paper_y and envelop_x>paper_x:
+            print(True)
+        else:
+            print(False)
 
-# TODO здесь ваш код
+
+
+
+
+
+
 
 # Усложненное задание, решать по желанию.
 # Заданы размеры hole_x, hole_y прямоугольного отверстия и размеры brick_х, brick_у, brick_z кирпича (все размеры
