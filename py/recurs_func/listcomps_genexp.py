@@ -14,3 +14,50 @@
 # используем генератор в цикле for
 # 8) генэксп может потенциально генерировать бесконечные последовательности, но он ничего не знает 
 # о порядке элементов или о их количестве (нет len)
+
+
+import pprint
+
+
+
+squares=[e for e in range(10) if e%2==0]# все четные числа до 10
+
+squares=([e**2 for e in range(10) if e%2==0])# ониже в квадрате
+
+text='hello world my freands'
+words=[x.capitalize() for x in text.split()]# разбить строку на слова и первая буква большая!
+
+
+ints=[-1,-9,-8,9,-7]
+positivs = [e for e in ints if e>0]
+
+letters=[letter for word in text.split() for letter in word if letter>'m']
+uniq_letters={letter for word in text.split() for letter in word if letter>'m'}#множества-списки уникальных объектов
+
+matrix=[list(range(x,x+3)) for x in range(3)]
+
+alfabet={index:letter for index,letter in enumerate('abcdefghjklmnop',1)}
+change_alfabet={value:key for key,value in alfabet.items()}
+
+# ===========================================
+positivs_gen = (e for e in ints if e>0)
+
+even_namb=(e for e in range(100) if e%2==0)
+
+
+if __name__=='__main__':
+    # print(squares)
+    # print(words)
+    # print(positivs)
+    # print(letters)
+    # print(uniq_letters)
+    # pprint.pprint(matrix,indent=1,width=15)
+    # print(alfabet)
+    # print(change_alfabet)
+
+    # ------------------------
+    # print(positivs_gen)
+    # print(next(positivs_gen))
+    print(next(even_namb))
+    print(next(even_namb))
+
