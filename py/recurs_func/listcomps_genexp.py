@@ -45,6 +45,7 @@ positivs_gen = (e for e in ints if e>0)
 even_namb=(e for e in range(100) if e%2==0)
 
 
+
 if __name__=='__main__':
     # print(squares)
     # print(words)
@@ -60,4 +61,6 @@ if __name__=='__main__':
     # print(next(positivs_gen))
     print(next(even_namb))
     print(next(even_namb))
+    for i in even_namb:
+        print(i)
 
